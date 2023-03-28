@@ -16,6 +16,7 @@ class HabitsViewController: UIViewController {
         view.backgroundColor = .white
 
         navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.title = "Today"
         navigationController?.navigationBar.tintColor = .purple
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.shadowColor = UIColor(red: 0.235, green: 0.235, blue: 0.263, alpha: 0.29)

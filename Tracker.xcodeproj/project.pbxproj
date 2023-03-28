@@ -22,6 +22,7 @@
 		F2FEC7DD29D2DA6D0059A1C1 /* HabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC7DC29D2DA6D0059A1C1 /* HabitCollectionViewCell.swift */; };
 		F2FEC7DF29D2DA790059A1C1 /* ProgressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC7DE29D2DA780059A1C1 /* ProgressCollectionViewCell.swift */; };
 		F2FEC7E129D2DA8A0059A1C1 /* HabitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC7E029D2DA8A0059A1C1 /* HabitViewCell.swift */; };
+		F2FEC7E329D2ECDE0059A1C1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC7E229D2ECDE0059A1C1 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F2FEC7DC29D2DA6D0059A1C1 /* HabitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewCell.swift; sourceTree = "<group>"; };
 		F2FEC7DE29D2DA780059A1C1 /* ProgressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCollectionViewCell.swift; sourceTree = "<group>"; };
 		F2FEC7E029D2DA8A0059A1C1 /* HabitViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewCell.swift; sourceTree = "<group>"; };
+		F2FEC7E229D2ECDE0059A1C1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				F26876B429D237CA0069975E /* ViewModels */,
 				F26876B129D237AE0069975E /* Views */,
 				F26876B329D237C10069975E /* Models */,
+				F2FEC7E229D2ECDE0059A1C1 /* Extensions.swift */,
 				F265F3CF29D22E4A00AA6824 /* Assets.xcassets */,
 				F265F3D129D22E4A00AA6824 /* LaunchScreen.storyboard */,
 				F265F3D429D22E4A00AA6824 /* Info.plist */,
@@ -217,6 +220,7 @@
 				F2FEC7DF29D2DA790059A1C1 /* ProgressCollectionViewCell.swift in Sources */,
 				F26876AE29D2376F0069975E /* HabitView.swift in Sources */,
 				F26876AC29D237620069975E /* HabitsViewModel.swift in Sources */,
+				F2FEC7E329D2ECDE0059A1C1 /* Extensions.swift in Sources */,
 				F26876B029D237940069975E /* HabitDetailView.swift in Sources */,
 				F2FEC7E129D2DA8A0059A1C1 /* HabitViewCell.swift in Sources */,
 				F265F3C929D22E4900AA6824 /* SceneDelegate.swift in Sources */,
