@@ -17,6 +17,7 @@
 		F26876AC29D237620069975E /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26876AB29D237620069975E /* HabitsViewModel.swift */; };
 		F26876AE29D2376F0069975E /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26876AD29D2376F0069975E /* HabitView.swift */; };
 		F26876B029D237940069975E /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26876AF29D237940069975E /* HabitDetailView.swift */; };
+		F2DB9B5429D3910900A39304 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB9B5329D3910900A39304 /* ProgressView.swift */; };
 		F2FEC7D829D2D5200059A1C1 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC7D729D2D5200059A1C1 /* NavigationController.swift */; };
 		F2FEC7DA29D2D60A0059A1C1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC7D929D2D60A0059A1C1 /* InfoViewController.swift */; };
 		F2FEC7DD29D2DA6D0059A1C1 /* HabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC7DC29D2DA6D0059A1C1 /* HabitCollectionViewCell.swift */; };
@@ -37,6 +38,7 @@
 		F26876AB29D237620069975E /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
 		F26876AD29D2376F0069975E /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
 		F26876AF29D237940069975E /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		F2DB9B5329D3910900A39304 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		F2FEC7D729D2D5200059A1C1 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		F2FEC7D929D2D60A0059A1C1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		F2FEC7DC29D2DA6D0059A1C1 /* HabitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				F26876AD29D2376F0069975E /* HabitView.swift */,
 				F26876AF29D237940069975E /* HabitDetailView.swift */,
+				F2DB9B5329D3910900A39304 /* ProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				F2FEC7E329D2ECDE0059A1C1 /* Extensions.swift in Sources */,
 				F26876B029D237940069975E /* HabitDetailView.swift in Sources */,
 				F2FEC7E129D2DA8A0059A1C1 /* HabitViewCell.swift in Sources */,
+				F2DB9B5429D3910900A39304 /* ProgressView.swift in Sources */,
 				F265F3C929D22E4900AA6824 /* SceneDelegate.swift in Sources */,
 				F2FEC7DD29D2DA6D0059A1C1 /* HabitCollectionViewCell.swift in Sources */,
 			);

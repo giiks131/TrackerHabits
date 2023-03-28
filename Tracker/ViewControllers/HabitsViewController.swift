@@ -27,7 +27,9 @@ class HabitsViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        self.habitsCollectionView.reloadData()
+        habitsCollectionView.dataSource = self
+        habitsCollectionView.delegate = self
+        habitsCollectionView.reloadData()
     }
 
     private lazy var habitsCollectionView: UICollectionView = {
@@ -37,7 +39,7 @@ class HabitsViewController: UIViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
         collectionView.backgroundColor = UIColor(red: 0.949, green: 0.949, blue: 0.969, alpha: 1)
         collectionView.register(HabitCollectionViewCell.self, forCellWithReuseIdentifier: HabitCollectionViewCell.id)
-        collectionView.register(ProgressCollectionViewCell.self, forCellWithReuseIdentifier: ProgressCollectionViewCell.id)
+//        collectionView.register(ProgressCollectionViewCell.self, forCellWithReuseIdentifier: ProgressCollectionViewCell.id)
 
         return collectionView
     }()
@@ -53,3 +55,23 @@ class HabitsViewController: UIViewController {
     }
 }
 
+extension HabitsViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = habitsCollectionView.dequeueReusableCell(withReuseIdentifier: HabitCollectionViewCell.id, for: indexPath) as! HabitCollectionViewCell
+
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var returnValue = CGSize()
+        let paddingWidth = collectionView.frame.width - 32
+
+        returnValue = CGSize(width: paddingWidth, height: 130)
+        return returnValue
+    }
+
+}

@@ -50,7 +50,7 @@ class HabitView: UIView {
 
     private lazy var habitTrackButton: UIButton = {
         var config = UIButton.Configuration.filled()
-        config.cornerStyle = .medium
+        config.cornerStyle = .capsule
 
         let habitTrackButton = UIButton(configuration: config)
 
@@ -66,6 +66,7 @@ class HabitView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupLayout()
     }
 
     required init?(coder: NSCoder) {
@@ -77,11 +78,35 @@ private extension HabitView {
 
     func setupLayout() {
         self.addSubview(habitCollectionBackView)
-        habitCollectionBackView.addSubview(habitCollectionTitle)
         habitCollectionBackView.addSubviews([habitCollectionTitle, habitCollectionTimeLabel, habitCollectionCountLabel, habitTrackButton, habitCheckmarkImageView])
 
         habitCollectionBackView.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+            make.size.equalToSuperview()
         }
+
+        habitCollectionTitle.snp.makeConstraints { make in
+            make.top.leading.equalTo(20)
+        }
+
+        habitCollectionTimeLabel.snp.makeConstraints { make in
+            make.top.equalTo(habitCollectionTitle.snp.bottom).offset(4)
+            make.leading.equalToSuperview().offset(20)
+        }
+
+        habitCollectionCountLabel.snp.makeConstraints { make in
+            make.bottom.equalToSuperview().offset(-16)
+            make.leading.equalToSuperview().offset(20)
+        }
+
+        habitTrackButton.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-26)
+            make.centerY.equalToSuperview()
+            make.width.height.equalTo(38)
+        }
+
+        habitCheckmarkImageView.snp.makeConstraints { make in
+            make.center.equalTo(habitTrackButton.snp.center)
+        }
+
     }
 }
