@@ -9,6 +9,9 @@ import UIKit
 
 class NavigationController: UITabBarController {
 
+    let habitsItemName: String = "Habits"
+    let infoItemName: String = "Info"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBar()
@@ -19,8 +22,8 @@ class NavigationController: UITabBarController {
     }
 
     func setupTabBar() {
-        let habitsViewController = createNavigationController(viewController: HabitsViewController(), itemName: "Habits", itemImage: "rectangle.grid.1x2.fill")
-        let infoViewController = createNavigationController(viewController: InfoViewController(), itemName: "Info", itemImage: "info.circle.fill")
+        let habitsViewController = createNavigationController(viewController: HabitsViewController(), itemName: habitsItemName, itemImage: "rectangle.grid.1x2.fill")
+        let infoViewController = createNavigationController(viewController: InfoViewController(), itemName: infoItemName, itemImage: "info.circle.fill")
 
         viewControllers = [habitsViewController, infoViewController]
     }
