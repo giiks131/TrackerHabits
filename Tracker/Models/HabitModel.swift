@@ -27,10 +27,26 @@ public final class Habit: Codable {
         }
     }
 
+    public var isAlreadyTakenToday: Bool {
+        guard let lastTrackDate = trackDates.last else {
+            return false
+        }
+        return calendar.isDateInToday(lastTrackDate)
+    }
+
     private var r: CGFloat
     private var g: CGFloat
     private var b: CGFloat
     private var a: CGFloat
+
+    private lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "it_IT")
+        formatter.timeStyle = .short
+        return formatter
+    }()
+
+    private lazy var calendar: Calendar = .current
 
     public init(name: String, date: Date, trackDates: [Date] = [], color: UIColor) {
         self.name = name
@@ -48,15 +64,15 @@ public final class Habit: Codable {
     }
 }
 
-//extension Habit: Equatable {
-//
-//    public static func == (lhs: Habit, rhs: Habit) -> Bool {
-//        lhs.name == rhs.name &&
-//        lhs.date == rhs.date &&
-//        lhs.trackDates == rhs.trackDates &&
-//        lhs.r == rhs.r &&
-//        lhs.g == rhs.g &&
-//        lhs.b == rhs.b &&
-//        lhs.a == rhs.a
-//    }
-//}
+extension Habit: Equatable {
+
+    public static func == (lhs: Habit, rhs: Habit) -> Bool {
+        lhs.name == rhs.name &&
+        lhs.date == rhs.date &&
+        lhs.trackDates == rhs.trackDates &&
+        lhs.r == rhs.r &&
+        lhs.g == rhs.g &&
+        lhs.b == rhs.b &&
+        lhs.a == rhs.a
+    }
+}
