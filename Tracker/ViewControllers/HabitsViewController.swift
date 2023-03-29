@@ -48,7 +48,6 @@ class HabitsViewController: UIViewController {
         view.addSubview(habitsCollectionView)
 
         habitsCollectionView.snp.makeConstraints { make in
-            //            make.center.leading.trailing.equalToSuperview()
             make.edges.equalToSuperview()
         }
     }
