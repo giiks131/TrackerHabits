@@ -27,7 +27,6 @@ private extension HabitCollectionViewCell {
     func setupLayout() {
         habitView = HabitView()
 //        guard habitView == nil else { return }
-        
         self.contentView.addSubview(habitView!)
         
         habitView?.snp.makeConstraints({ make in
