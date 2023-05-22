@@ -15,10 +15,7 @@ class NavigationController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBar()
-//        self.tabBar.isTranslucent = false
-//        self.tabBar.backgroundColor = .red
         self.tabBar.tintColor = .purple
-
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithOpaqueBackground()
         tabBarAppearance.backgroundColor = .white
